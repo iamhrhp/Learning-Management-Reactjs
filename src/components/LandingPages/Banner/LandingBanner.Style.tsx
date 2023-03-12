@@ -4,6 +4,7 @@ export const LandingBannerStyles: any = (theme: any) => ({
     alignItems: 'center',
     justifyContent: 'space-around',
     marginTop: '20px',
+    marginBottom: '10px',
   },
   bannerText: {
     fontSize: '15px !important',
@@ -12,6 +13,7 @@ export const LandingBannerStyles: any = (theme: any) => ({
     color: '#685f78',
     '&:hover': {
       color: '#ff6575',
+      cursor: 'pointer',
     },
     [theme.breakpoints.down('md')]: {
       display: 'none',
@@ -20,6 +22,10 @@ export const LandingBannerStyles: any = (theme: any) => ({
   burgerOptions: {
     display: 'none',
     [theme.breakpoints.down('md')]: {
+      display: 'block',
+      width: '100%',
+    },
+    [theme.breakpoints.down('sm')]: {
       display: 'block',
       width: '80%',
     },
@@ -48,6 +54,14 @@ export const LandingBannerStyles: any = (theme: any) => ({
       color: '#ffffff !important',
       border: '2px solid #ff6575 !important',
     },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0px 0px !important',
+      marginRight: '5px !important',
+      fontSize: '11px !important',
+      minWidth: '80px !important',
+      minHeight: '30px !important',
+      height: '30px',
+    },
   },
   logBtn: {
     fontFamily: ' inter,sans-serif !important',
@@ -68,5 +82,41 @@ export const LandingBannerStyles: any = (theme: any) => ({
       color: '#ffffff !important',
       border: '2px solid #ff6575 !important',
     },
+    [theme.breakpoints.down('sm')]: {
+      padding: '0px 0px !important',
+      marginRight: '5px !important',
+      fontSize: '11px !important',
+      minWidth: '80px !important',
+      minHeight: '30px !important',
+      height: '30px',
+    },
+  },
+  bannerOptions: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    width: '50%',
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  },
+  ButtonBox: {
+    display: 'flex',
+    justifyContent: 'space-around',
+  },
+  sidebarOptionText: {
+    color: '#ffffff',
+    padding: '20px 0px 20px 20px',
+    '&:hover': {
+      cursor: 'pointer',
+      background: '#ffffff',
+      color: '#ff6575',
+      transition: '0.3s ease-in-out',
+    },
+  },
+  sidebarBoxWrapper: {
+    width: 250,
+    background: '#ff6575',
+    height: '100vh',
   },
 });
