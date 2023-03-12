@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import LandingPages from '../components/LandingPages/LandingPages';
 
 interface RoutesPageProps {}
 
@@ -12,6 +13,7 @@ class RoutesPage extends Component<RoutesPageProps, RoutesPageState> {
   render() {
     return (
       <>
+        <LandingPages />
         {/* Customer-------------  */}
         {/* Seller-------------  */}
       </>
