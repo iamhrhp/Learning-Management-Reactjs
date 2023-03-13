@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Courses from '../components/LandingPages/Courses/Courses';
 import LandingPages from '../components/LandingPages/LandingPages';
 
 interface RoutesPageProps {}
@@ -14,6 +15,7 @@ class RoutesPage extends Component<RoutesPageProps, RoutesPageState> {
     return (
       <>
         <LandingPages />
+        <Courses/>
         {/* Customer-------------  */}
         {/* Seller-------------  */}
       </>
