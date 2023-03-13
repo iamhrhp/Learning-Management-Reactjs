@@ -5,6 +5,7 @@ import logo from '../../../assets/images/bannerLogo/logo.svg';
 import { withStyles } from '@mui/styles';
 import { LandingBannerStyles } from './LandingBanner.Style';
 import MenuIcon from '@mui/icons-material/Menu';
+import { options } from '../../../assets/data/bannerOptionsData';
 interface LandingBannerProps {
   classes?: any;
 }
@@ -32,14 +33,6 @@ class LandingBanner extends React.Component<
 
   render() {
     const { classes } = this.props;
-    const options = [
-      { id: 1, title: 'Home' },
-      { id: 2, title: 'Courses' },
-      { id: 3, title: 'Instructor' },
-      { id: 4, title: 'Student' },
-      { id: 5, title: 'Blog' },
-      { id: 6, title: 'About Us' },
-    ];
     return (
       <>
         <Box className={classes.boxWrapper}>
